@@ -1,3 +1,16 @@
+"""
+Basic app structure
+A very minimal Flet app has the following structure:
+
+import flet as ft
+
+def main(page: ft.Page):
+    # add/update controls on Page
+    pass
+
+ft.app(target=main)
+"""
+
 import flet as ft
 
 
@@ -29,12 +42,5 @@ def main(page: ft.Page):
 
 ft.app(target=main)
 
-
-def hello_world():
-    # Code to run when the script is executed directly
-    print("Hello, world!")
-
-
 if __name__ == "__main__":
-    hello_world()
     ft.app(target=main)
