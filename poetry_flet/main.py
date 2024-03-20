@@ -39,8 +39,12 @@ def main(page: ft.Page):
         )
     )
 
+# Запуск в отдельном окне
+# ft.app(target=main)
 
-ft.app(target=main)
+# Запуск в веб-браузере
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    # ft.app(target=main)
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER)
